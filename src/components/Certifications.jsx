@@ -5,13 +5,13 @@ const Certifications = () => {
   const [selectedCert, setSelectedCert] = useState(null);
 
   const certs = [
-    { title: "Java Skill Up | GeeksforGeeks", date: "January 2026", path: "/GFG JAVA Certificate.pdf" },
-    { title: "Data Science Industrial Training | InternsElite", date: "August 2025", path: "/Certificate of Training-MALLELA JITHENDRA_Data Science_IT_2025_DS-T6_TC-10256_InternsElite.pdf" },
-    { title: "Cloud Computing | NPTEL", date: "April 2025", highlight: "Elite with 60%", path: "/Cloud Computing.pdf" },
-    { title: "Full Stack Development with MERN | thingQbator", date: "December 2025", path: "/1766658276420_MallelaJithendra_Course-Excellence.pdf" },
-    { title: "Oracle Cloud Infrastructure | Oracle", date: "December 2025", path: "/oracle eCertificate.pdf" },
-    { title: "Chatbot or smart Assistant Development | thingQbator", date: "December 2025", path: "/1766657649704_MallelaJithendra_Course-Excellence.pdf" },
-    { title: "Responsive Web Design Developer | freeCodeCamp", date: "November 2023", path: "/freecodecamp.pdf" }
+    { title: "Java Skill Up | GeeksforGeeks", date: "January 2026", path: `${import.meta.env.BASE_URL}GFG JAVA Certificate.pdf` },
+    { title: "Data Science Industrial Training | InternsElite", date: "August 2025", path: `${import.meta.env.BASE_URL}Certificate of Training-MALLELA JITHENDRA_Data Science_IT_2025_DS-T6_TC-10256_InternsElite.pdf` },
+    { title: "Cloud Computing | NPTEL", date: "April 2025", highlight: "Elite with 60%", path: `${import.meta.env.BASE_URL}Cloud Computing.pdf` },
+    { title: "Full Stack Development with MERN | thingQbator", date: "December 2025", path: `${import.meta.env.BASE_URL}1766658276420_MallelaJithendra_Course-Excellence.pdf` },
+    { title: "Oracle Cloud Infrastructure | Oracle", date: "December 2025", path: `${import.meta.env.BASE_URL}oracle eCertificate.pdf` },
+    { title: "Chatbot or smart Assistant Development | thingQbator", date: "December 2025", path: `${import.meta.env.BASE_URL}1766657649704_MallelaJithendra_Course-Excellence.pdf` },
+    { title: "Responsive Web Design Developer | freeCodeCamp", date: "November 2023", path: `${import.meta.env.BASE_URL}freecodecamp.pdf` }
   ];
 
   return (

@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="hero-header">
           <div className="avatar-container">
             <img 
-              src="/profile.jpg.png" 
+              src={`${import.meta.env.BASE_URL}profile.jpg.png`}
               alt="Jithendra Mallela" 
               className="hero-avatar"
               onError={(e) => {
@@ -69,7 +69,7 @@ const Hero = () => {
           Passionate about building scalable web applications, intelligent solutions using AI/RAG, and solving complex problems with modern technologies.
         </p>
         <div className="hero-links">
-          <a href="/resume.pdf" download="Jithendra_Mallela_Resume.pdf" className="hero-link" style={{ background: 'var(--accent-gradient)', borderColor: 'transparent', color: '#fff' }}>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Jithendra_Mallela_Resume.pdf" className="hero-link" style={{ background: 'var(--accent-gradient)', borderColor: 'transparent', color: '#fff' }}>
             <Download size={20} />
             <span>Download Resume</span>
           </a>
