@@ -7,6 +7,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // Initialize Gemini
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey || 'dummy');
+console.log("Is Gemini API Key loaded in this build?:", !!apiKey);
 
 const SYSTEM_PROMPT = `
 You are the AI Assistant for Jithendra Mallela's portfolio website. Your purpose is to answer questions about him professionally and enthusiastically. 
